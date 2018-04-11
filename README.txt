@@ -1,8 +1,9 @@
 Bugs Fixed 
-1. ArticleController - public async Task<IActionResult> Get([FromRoute]int articleId)
-2. GenericRepository - Delete method
-3. CrossBlogDbContext - On delete of article cascade to comments
-4. Article and ArticleModel Field Lengths
+1. ArticleController - Returning ArticleModel from Post method
+2. CommentController - Filtering by ArticleId in Get method
+3. GenericRepository - Fixing DeleteAsync
+4. CrossBlogDbContext - Changing it so on deletion of article, comments are cascade deleted.
+5. Article and ArticleModel Field Lengths
 
 Challenge Statement
 
